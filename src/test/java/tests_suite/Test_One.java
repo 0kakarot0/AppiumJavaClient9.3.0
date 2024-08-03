@@ -11,7 +11,7 @@ public class Test_One extends BaseTest {
 
     @Test
     public void enterEmail() {
-        page = new LoginPage(driver);
+        page = new LoginPage(driver, platformName);
         page.enterEmailAddress("abc@gmail.com");
     }
 
