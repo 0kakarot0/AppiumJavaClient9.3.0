@@ -1,0 +1,24 @@
+[
+  {
+    "device": {
+      "udid": "emulator-5554",
+      "deviceName": "emulatorone",
+      "platformName": "Android",
+      "automationName": "UiAutomator2",
+      "platformVersion": "14",
+      "autoGrantPermissions": "true",
+      "app": "/app/app-release.apk"
+    }
+  },
+  {
+    "device": {
+      "udid": "emulator-5554",
+      "deviceName": "iPhone 14",
+      "platformName": "iOS",
+      "automationName": "XCUITest",
+      "platformVersion": "17.2",
+      "autoGrantPermissions": "true",
+      "app": "/app/Runner.app"
+    }
+  }
+]
