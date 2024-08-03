@@ -1,0 +1,50 @@
+{
+  "android": {
+    "loginScreen": {
+      "emailField": {
+        "accessibilityId": "login_username_field",
+        "xpath": "//android.view.View[@content-desc=\"Food Delivery App.\"]/following-sibling::android.widget.EditText[1]"
+      },
+      "initialPasswordLocator": {
+        "accessibilityId": "login_password_field",
+        "xpath": "//android.view.View[@content-desc=\"Food Delivery App.\"]/following-sibling::android.widget.EditText[2]"
+      },
+      "finalPasswordLocator": {
+        "accessibilityId": "login_password_field",
+        "xpath": "//android.widget.EditText[@content-desc='login_password_field']"
+      },
+      "loginButton": {
+        "accessibilityId": "Log in",
+        "xpath": "//android.view.View[@content-desc=\"Log in\"]"
+      },
+      "errorNotification": {
+        "accessibilityId": "login_button",
+        "xpath": "//android.view.View[contains(@content-desc,'Exception: invalid-credential')]"
+      }
+    }
+  },
+  "ios": {
+    "loginScreen": {
+      "emailField": {
+        "accessibilityId": "username_field",
+        "xpath": "//XCUIElementTypeTextField[@name=\"Email Text Field\nEnter email\"]"
+      },
+      "initialPasswordLocator": {
+        "accessibilityId": "login_password_field",
+        "xpath": "//XCUIElementTypeTextField[contains(@name,'Password Text Field')]"
+      },
+      "finalPasswordLocator": {
+        "accessibilityId": "login_password_field",
+        "xpath": "//XCUIElementTypeSecureTextField[contains(@name,'Password Text Field')]"
+      },
+      "loginButton": {
+        "accessibilityId": "login_button",
+        "xpath": "//XCUIElementTypeStaticText[@name=\"Log in Button\nLog in\"]"
+      },
+      "errorNotification": {
+        "accessibilityId": "login_button",
+        "xpath": "//XCUIElementTypeStaticText[contains(@name,'Exception: invalid-credential')]"
+      }
+    }
+  }
+}
