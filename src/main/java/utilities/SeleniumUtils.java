@@ -11,6 +11,7 @@ import java.time.Duration;
 public class SeleniumUtils {
     private AppiumDriver driver;
     private WebDriverWait wait;
+    private static final String CONTENT_DESCRIPTION = "content-desc";
 
     public SeleniumUtils(AppiumDriver driver) {
         this.driver = driver;
@@ -30,6 +31,15 @@ public class SeleniumUtils {
     public String getTextFromElement(By locator) {
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         return driver.findElement(locator).getText();
+    }
+
+    public String getContentDescription(By locator) {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        return driver.findElement(locator).getAttribute(CONTENT_DESCRIPTION);
+    }
+
+    public void navigateBack() {
+        driver.navigate().back();
     }
 
 
