@@ -5,7 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.ios.options.XCUITestOptions;
 import io.appium.java_client.remote.options.BaseOptions;
-import tests_utils.DeviceConfig;
+import tests_utils.file_reader.DeviceConfig;
 
 import java.io.File;
 import java.io.FileNotFoundException;
